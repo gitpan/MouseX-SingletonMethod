@@ -1,14 +1,15 @@
 ---
 abstract: 'Mouse with Singleton Method facility'
 author:
-  - 'Hideaki Ohno <hide.o.j55 {at} gmail.com>'
+  - 'Hideaki Ohno<hide.o.j55@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.36
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
+keywords:
+  - Mouse
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,13 +17,23 @@ meta-spec:
 name: MouseX-SingletonMethod
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - eg
+provides:
+  MouseX::SingletonMethod:
+    file: lib/MouseX/SingletonMethod.pm
+    version: 0.03
+  MouseX::SingletonMethod::Role:
+    file: lib/MouseX/SingletonMethod/Role.pm
+    version: 0
 requires:
   Mouse: 0
   Mouse::Role: 0
+  perl: v5.6.2
 resources:
+  bugtracker: https://github.com/hideo55/p5-MouseX-SingletonMethod/issues
   license: http://dev.perl.org/licenses/
   repository: git://github.com/hideo55/p5-MouseX-SingletonMethod.git
-version: 0.02
+version: 0.03

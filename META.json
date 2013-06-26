@@ -1,16 +1,11 @@
 {
    "abstract" : "Mouse with Singleton Method facility",
    "author" : [
-      "Hideaki Ohno<hide.o.j55@gmail.com>"
+      "Hideaki Ohno <hide.o.j55 {at} gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
-   "keywords" : [
-      "Mouse"
-   ],
-   "license" : [
-      "perl_5"
-   ],
+   "generated_by" : "Minilla/v0.5.3",
+   "license" : "perl_5",
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
@@ -21,7 +16,10 @@
          "t",
          "xt",
          "inc",
-         "eg"
+         "share",
+         "eg",
+         "examples",
+         "author"
       ]
    },
    "prereqs" : {
@@ -32,25 +30,34 @@
       },
       "configure" : {
          "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
             "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
          }
       },
       "runtime" : {
          "requires" : {
-            "Mouse" : 0,
-            "Mouse::Role" : 0,
-            "perl" : "v5.6.2"
+            "Mouse" : "0",
+            "Mouse::Role" : "0",
+            "perl" : "5.008001"
          }
       }
    },
    "provides" : {
       "MouseX::SingletonMethod" : {
          "file" : "lib/MouseX/SingletonMethod.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       },
       "MouseX::SingletonMethod::Role" : {
-         "file" : "lib/MouseX/SingletonMethod/Role.pm",
-         "version" : 0
+         "file" : "lib/MouseX/SingletonMethod/Role.pm"
       }
    },
    "release_status" : "stable",
@@ -58,12 +65,14 @@
       "bugtracker" : {
          "web" : "https://github.com/hideo55/p5-MouseX-SingletonMethod/issues"
       },
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ],
+      "homepage" : "https://github.com/hideo55/p5-MouseX-SingletonMethod",
       "repository" : {
-         "url" : "git://github.com/hideo55/p5-MouseX-SingletonMethod.git"
+         "url" : "git://github.com/hideo55/p5-MouseX-SingletonMethod.git",
+         "web" : "https://github.com/hideo55/p5-MouseX-SingletonMethod"
       }
    },
-   "version" : "0.03"
+   "version" : "0.04",
+   "x_contributors" : [
+      "hideo55 <hide.o.j55@gmail.com>"
+   ]
 }

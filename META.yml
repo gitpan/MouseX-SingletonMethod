@@ -1,15 +1,15 @@
 ---
 abstract: 'Mouse with Singleton Method facility'
 author:
-  - 'Hideaki Ohno<hide.o.j55@gmail.com>'
+  - 'Hideaki Ohno <hide.o.j55 {at} gmail.com>'
 build_requires:
   Test::More: 0.98
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
-keywords:
-  - Mouse
+generated_by: 'Minilla/v0.5.3, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,20 +20,24 @@ no_index:
     - t
     - xt
     - inc
+    - share
     - eg
+    - examples
+    - author
 provides:
   MouseX::SingletonMethod:
     file: lib/MouseX/SingletonMethod.pm
-    version: 0.03
+    version: 0.04
   MouseX::SingletonMethod::Role:
     file: lib/MouseX/SingletonMethod/Role.pm
-    version: 0
 requires:
   Mouse: 0
   Mouse::Role: 0
-  perl: v5.6.2
+  perl: 5.008001
 resources:
   bugtracker: https://github.com/hideo55/p5-MouseX-SingletonMethod/issues
-  license: http://dev.perl.org/licenses/
+  homepage: https://github.com/hideo55/p5-MouseX-SingletonMethod
   repository: git://github.com/hideo55/p5-MouseX-SingletonMethod.git
-version: 0.03
+version: 0.04
+x_contributors:
+  - 'hideo55 <hide.o.j55@gmail.com>'

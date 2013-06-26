@@ -1,12 +1,13 @@
 package MouseX::SingletonMethod;
 use strict;
 use warnings;
+use 5.008001;
 
 use Mouse ();
 use Mouse::Exporter;
 use Mouse::Util::MetaRole;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 Mouse::Exporter->setup_import_methods( also => 'Mouse' );
 
